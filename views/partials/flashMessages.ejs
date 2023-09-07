@@ -1,0 +1,27 @@
+<% if (success.length > 0) { %>
+    <div class="alert alert-success">
+        <%= success %>
+        <a href="#" class="close">&times;</a>
+      </div>
+<% } %>
+<% if (error.length > 0) { %>
+    <div class="alert alert-error">
+        <%= error %>
+        <a href="#" class="close">&times;</a>
+      </div>
+<% } %>
+
+<script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        var alerts = document.querySelectorAll('.alert');
+        var closeButton = document.querySelectorAll('.close');
+
+        function closeAlert() {
+            var alert = this.parentNode;
+            alert.style.display = 'none';
+        }
+        closeButton.forEach(function(btn) {
+            btn.addEventListener('click', closeAlert);
+        });
+    });
+</script>

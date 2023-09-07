@@ -1,0 +1,14 @@
+<%- include('../partials/navbar') %>
+<%- include('../partials/flashMessages') %>
+
+<a href="/" class="ms-3 mt-2 btn btn-outline-primary" style="display: inline-block;">Back</a>
+<div class="d-flex flex-column justify-content-center align-items-center" style="min-height: 60vh;">
+    <div class="mb-5 bold-text-3"> Teacher Login</div>
+    <form method="POST" style="min-width: 50vw;">
+        <div class="mb-3">
+            <label for="pass" class="form-label">Password: </label>
+            <input type="password" class="form-control" name="password" id="pass" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>

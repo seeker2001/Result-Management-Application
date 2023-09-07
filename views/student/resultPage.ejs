@@ -1,0 +1,30 @@
+<%- include('../partials/navbar') %>
+
+%>
+
+<a href="/student/search" class="btn btn-outline-primary mt-4 ms-4">Back</a>
+<div>
+  <div class="m-2 d-flex flex-column justify-content-center align-items-center" style="min-height: 30vh;">
+    <h2 class="bold-text-2 d-flex justify-content-center me-4 my-4">Result</h2>
+        <table class="table table-hover" style="max-width: 70vw;">
+            <tbody>
+              <tr>
+                <td style="width:70%;">Roll No.</td>
+                <td><%= requiredStudent.roll_no %></th>
+              </tr>
+              <tr>
+                <td>Name</th>
+                <td><%= requiredStudent.name %></td>
+              </tr>
+              <tr>
+                <td>Date of Birth</td>
+                <td><%= requiredStudent.dob %></td>
+              </tr>
+              <tr>
+                <td>Score</td>
+                <td><%= requiredStudent.score %></td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+</div>

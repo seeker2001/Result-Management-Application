@@ -1,0 +1,34 @@
+<%- include('../partials/navbar') %>
+<a href="/teacher/viewall" class="ms-3 mt-2 btn btn-outline-primary" style="display: inline-block;">Back</a>
+<main class="m-4">
+    <div class="bold-text-2 mb-4">Edit Record</div>
+    <form id="addStudentForm" class="ms-5" method="POST">
+        <div class="row mb-3">
+          <label for="roll_no" class="col-sm-2 col-form-label">Roll No</label>
+          <div class="col-sm-10">
+            <input type="number" class="form-control" required id="roll_no" name="roll_no" value="<%= reqStudent.roll_no %>">
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="name" class="col-sm-2 col-form-label">Name</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" required id="name" name="name" value="<%= reqStudent.name %>">
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="dob" class="col-sm-2 col-form-label">Date of Birth</label>
+          <div class="col-sm-10">
+            <input type="date" class="form-control" required id="dob" name="dob" value="<%= reqStudent.dob %>">
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="score" class="col-sm-2 col-form-label">Score</label>
+          <div class="col-sm-10">
+            <input type="number" class="form-control" required id="score"  name="score" value="<%= reqStudent.score %>">
+          </div>
+        </div>
+        <div class="mt-3">
+          <button type="submit" class="btn btn-primary px-4">Update</button>
+        </div>
+      </form>
+</main>

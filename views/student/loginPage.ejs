@@ -1,0 +1,18 @@
+<%- include('../partials/navbar') %>
+<%- include('../partials/flashMessages') %>
+
+<a href="/" class="ms-3 mt-2 btn btn-outline-primary" style="display: inline-block;">Back</a>
+<div class="d-flex flex-column justify-content-center align-items-center" style="min-height: 70vh;">
+    <div class="m-2 bold-text-2">Find Result</div>
+    <form action="/student/result" method="POST" id="studentLoginForm">
+        <div class="mb-3">
+            <label for="roll_no" class="form-label">Roll No. </label>
+            <input type="number" class="form-control" name="roll_no" id="roll_no" required>
+        </div>
+        <div class="mb-3">
+            <label for="dob" class="form-label">Date Of Birth</label>
+            <input type="date" class="form-control" name="dob" id="dob" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>

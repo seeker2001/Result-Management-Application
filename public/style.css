@@ -1,0 +1,63 @@
+/* Initializing the styling for all elements */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* font selected for the body */
+body {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    height : 100%;
+    font-size:large;
+}
+
+.bold-text-1 {
+    font-weight: 500;
+}
+
+.bold-text-2 {
+    font-weight: 600;
+}
+
+.bold-text-3 {
+    font-weight: 700;
+}
+
+#studentLoginForm {
+    min-width: 50vw;
+}
+
+#addStudentForm {
+    width : 70%;
+}
+
+.alert {
+    position: relative;
+    padding: 1rem;
+    margin-bottom: 1.25rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.alert-success {
+    background-color: rgb(84, 194, 84);
+}
+
+.alert-error {
+    background-color: rgb(196, 98, 98);
+}
+
+.close {
+    position: absolute;
+    top : 0.9rem;
+    right : 0.9rem;
+    font-size : 1.5rem;
+    font-weight: bold;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
